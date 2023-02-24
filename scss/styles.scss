@@ -1,0 +1,1429 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+$color-principal: linear-gradient(180deg, #def0d8 0%, #fafafa) 0% 0% no-repeat
+  padding-box;
+$h2-media480: 12px;
+$p-media480: 8px;
+$texto: 10px;
+$texto-fuente: "Raleway", sans-serif;
+$sombra-cajas: 0 0 10px rgba(0, 0, 0, 0.5);
+
+header {
+  height: 90px;
+  width: 100%;
+  margin: 0;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+}
+
+body {
+  background: $color-principal;
+  height: auto;
+}
+
+.cont-nav {
+  height: 80px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.barra-nav {
+  padding: 0px;
+  display: flex;
+}
+
+.logo {
+  width: 137px;
+  height: 50px;
+}
+
+.formulario {
+  font-family: "Space Mono", monospace;
+  height: auto;
+  width: 300px;
+}
+.formulario input {
+  width: 100%;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.botonera {
+  width: 30%;
+  height: 20px;
+  color: #383833;
+  text-transform: capitalize;
+  list-style: none;
+  line-height: 20px;
+  align-items: center;
+}
+
+.boton {
+  width: auto;
+  background-color: transparent;
+  margin: 5px auto;
+  list-style: none;
+  line-height: 20px;
+  text-align: center;
+  justify-content: center;
+  height: 20px;
+  padding: 0px;
+  border: none;
+}
+
+.menu-dropdown {
+  background-color: white;
+  padding: 0px;
+}
+
+.submenu {
+  margin-top: 3px;
+  width: 100%;
+}
+
+.botonera .menu-dropdown {
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  left: 90%;
+  justify-content: center;
+}
+
+.botonera .boton:hover .menu-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.botonera .submenu {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.botonera .submenu:hover {
+  background-color: #98c488;
+  color: black;
+  font-weight: bold;
+}
+.submenu a {
+  padding: 10px;
+}
+
+#primera-sect {
+  height: 850px;
+  width: 100%;
+  padding-top: 90px;
+  margin-top: 90px auto;
+  font-family: "Raleway", sans-serif;
+}
+
+.primero {
+  height: 100%;
+}
+
+.contenedor {
+  display: flex;
+}
+.cont-hijo1 {
+  float: left;
+  width: 50%;
+  height: 500px;
+  text-align: center;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.cont-hijo1 span h2 {
+  font-weight: bolder;
+}
+
+.parr {
+  font-weight: medium;
+}
+
+.cont-hijo {
+  width: 50%;
+  height: 100%;
+  background-color: #387546;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.menu-btn {
+  width: 100%;
+  height: 100%;
+}
+
+.check-menu {
+  animation-name: pulso;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #f19a33;
+  border-radius: 10px;
+  color: white;
+  text-transform: capitalize;
+  font-family: "Raleway", sans-serif;
+  margin-top: 50px;
+  box-shadow: $sombra-cajas;
+}
+
+.check-menu:hover {
+  transform: scale(1.3);
+  box-shadow: $sombra-cajas;
+  transition: 0.7s ease;
+}
+
+.img2 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+a:link {
+  text-decoration: none;
+  box-shadow: none;
+  outline: 0;
+  color: initial;
+}
+
+a:visited {
+  text-decoration: none;
+  box-shadow: none;
+  outline: 0;
+  color: initial;
+}
+
+a:hover {
+  text-decoration: none;
+  box-shadow: none;
+  outline: 0;
+  color: initial;
+}
+
+a:active {
+  text-decoration: none;
+  box-shadow: none;
+  outline: 0;
+  color: initial;
+}
+
+#segunda-sect {
+  width: 100%;
+  margin: 10px auto;
+  height: 1700px;
+  padding: 0px;
+}
+
+.titulo-grilla {
+  text-align: center;
+}
+
+.galeria {
+  height: 700px;
+  width: 100%;
+  padding: 0px;
+}
+
+.sub-cont {
+  padding: 0px;
+  display: grid;
+  height: 500px;
+  width: 100%;
+  margin: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 15px 15px;
+  grid-template-areas:
+    "uno dos dos tres"
+    "uno dos dos tres"
+    "uno dos dos tres"
+    "cuatro cuatro cinco cinco"
+    "cuatro cuatro cinco cinco";
+}
+
+.uno {
+  grid-area: uno;
+}
+
+.dos {
+  grid-area: dos;
+}
+
+.tres {
+  grid-area: tres;
+}
+
+.cuatro {
+  grid-area: cuatro;
+}
+
+.cinco {
+  grid-area: cinco;
+}
+
+.uno:hover {
+  transform: scale(1.05);
+  transition: 0.6s ease;
+  opacity: 0.5;
+}
+.dos:hover {
+  transform: scale(1.05);
+  transition: 0.6s ease;
+  opacity: 0.5;
+}
+.tres:hover {
+  transform: scale(1.05);
+  transition: 0.6s ease;
+  opacity: 0.5;
+}
+.cuatro:hover {
+  transform: scale(1.03);
+  transition: 0.6s ease;
+  opacity: 0.5;
+}
+.cinco:hover {
+  opacity: 0.5;
+  transform: scale(1.02);
+  transition: 0.6s ease;
+}
+.imguno,
+.imgdos,
+.imgtres,
+.imgcuatro,
+.imgcinco {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  margin: 15px auto;
+  margin-bottom: 0px;
+  padding: 0px;
+  height: auto;
+  width: 100%;
+}
+
+.cont-footer {
+  height: 250px;
+  width: 90%;
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info {
+  width: 30%;
+  height: 50%;
+  margin: 10px auto;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: $sombra-cajas;
+  border-radius: 78px;
+  opacity: 1;
+}
+
+.info p {
+  font-size: 1vw;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.horario,
+.lugar,
+.telefono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-hours,
+.location-zone,
+.contact-number {
+  width: 7%;
+  height: 10%;
+  margin-top: 15px;
+  align-self: center;
+  padding: 0px;
+}
+
+.redes {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+
+.foto {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  border-radius: 50%;
+  background: #fafafa;
+  z-index: 1;
+  position: relative;
+  top: 70px;
+}
+
+/* .foto-wrap {
+      position: relative;
+      top: 90px; 
+     } */
+
+.semi-circulo {
+  background: #598464 0% 0% no-repeat padding-box;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 150px;
+  border-radius: 50% 50% 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social {
+  width: auto;
+  height: 100px;
+  display: flex;
+}
+
+.social-media {
+  width: auto;
+  height: 20px;
+  background: transparent;
+  margin: 10px;
+  position: relative;
+  top: 110px;
+}
+
+/* ················································· */
+
+/* ----------------- CSS menu.html ----------------- */
+
+/* ················································· */
+
+.fondo {
+  background: $color-principal;
+  height: auto;
+  width: 100%;
+}
+
+#menu-disp {
+  width: 100%;
+  height: auto;
+
+  .food {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25rem;
+  }
+
+  .grilla-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px;
+    .comida-wrapper {
+      position: relative;
+      overflow: hidden;
+      margin: 10px;
+    }
+    .comida-wrapper > img {
+      display: block;
+      object-fit: cover;
+      object-position: center;
+      width: 90%;
+      height: 90%;
+    }
+    .comida-wrapper > .receta {
+      position: absolute;
+      width: 90%;
+      height: 90%;
+      inset: 0;
+      font-size: 10px;
+      padding: 10px;
+      font-family: $texto-fuente;
+      text-shadow: 2px 2px 2px black;
+      color: white;
+      // span {
+      //   display: flex;
+      //   justify-content: center;
+      // }
+    }
+  }
+
+  .comida-wrapper > img,
+  .comida-wrapper > .receta {
+    transition: 0.3s ease-in-out;
+  }
+  .comida-wrapper > .receta {
+    opacity: 0;
+  }
+  .comida-wrapper:hover > .receta {
+    opacity: 1;
+  }
+  .comida-wrapper:hover > img {
+    filter: blur(5px);
+  }
+  .comida-wrapper > .izq {
+    transform: translateX(-100%);
+  }
+  .comida-wrapper:hover > .izq {
+    transform: translateX(0);
+  }
+  .comida-wrapper > .arr {
+    transform: translateY(-100%);
+  }
+  .comida-wrapper:hover > .arr {
+    transform: translateY(0);
+  }
+  .comida-wrapper > .der {
+    transform: translateX(100%);
+  }
+  .comida-wrapper:hover > .der {
+    transform: translateX(0);
+  }
+}
+
+/* ···················································· */
+
+/* ----------------- CSS contact.html ----------------- */
+
+/* ···················································· */
+
+.contact-header {
+  text-align: center;
+  width: 100%;
+  font-size: 5vw;
+}
+
+.barras {
+  width: 50%;
+  margin: 10px auto;
+}
+
+.form-floating {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: calc(30%);
+  left: 4.2rem;
+}
+#name,
+#email,
+#phone,
+#textarea {
+  padding-left: 2.2rem;
+}
+
+.form-floating label,
+.form-floating,
+.form-control {
+  left: 2.5rem;
+  padding-left: 3.5rem;
+}
+
+.icon-textarea {
+  position: absolute;
+  top: 1.2rem;
+  left: 4.2rem;
+}
+
+.boton-submit {
+  margin-left: 6rem;
+  margin-bottom: 0px;
+}
+
+/* ················································· */
+
+/* ----------------- CSS about-us.html ----------------- */
+
+/* ················································· */
+
+#sec-about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-wrapper > img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  text-align: justify;
+}
+
+.img-wrapper > .intro-parrafo {
+  position: absolute;
+  inset: 0;
+  font-size: 15px;
+  padding: 10px;
+  line-height: 20px;
+  text-align: justify;
+  text-shadow: 2px 2px 2px black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-wrapper > img,
+.img-wrapper > .intro-parrafo {
+  transition: 0.2s ease-in-out;
+}
+.img-wrapper > .intro-parrafo.fade {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.img-wrapper:hover > .intro-parrafo.fade {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.img-wrapper:hover > img.blur {
+  filter: blur(5px);
+  transform: scale(1.1);
+}
+
+/* ···················································· */
+
+/* ----------------- locations.html ----------------- */
+
+/* ···················································· */
+
+#location1 {
+  width: 100%;
+  padding: 10px;
+}
+
+.country {
+  .franchise {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    text-align: center;
+  }
+}
+
+.primer-pais {
+  margin-top: 30px;
+}
+
+.mapa-cont {
+  text-align: center;
+  font-family: monospace;
+}
+
+.mapa {
+  height: 300px;
+  width: 100%;
+}
+.mapa-descripcion {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+}
+.mapa-descripcion:hover {
+  transform: scale(1.1);
+  text-shadow: 2px 2px 2px black;
+  color: white;
+}
+
+/* ···················································· */
+
+/* ----------------- work-with-us.html ----------------- */
+
+/* ···················································· */
+
+form,
+input {
+  text-transform: capitalize;
+}
+
+input {
+  width: 30px !important;
+}
+
+.form-control {
+  width: 100% !important;
+  padding-left: 5px !important;
+  font-size: 1vw;
+}
+
+.iti--allow-dropdown {
+  width: 90% !important;
+  font-size: 1vw;
+}
+/* ···················································· */
+
+/* ----------------- @media Queries ----------------- */
+
+/* ···················································· */
+
+/* -------- @Media para contact.html ------------ */
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 5vw;
+  }
+  header {
+    .barra-nav {
+      .cont-nav {
+        justify-content: space-evenly;
+        .logo {
+          width: 90px;
+          height: 50px;
+          margin: 0;
+        }
+        .formulario {
+          font-family: "Space Mono", monospace;
+          height: auto;
+          width: 40%;
+          margin-right: 20px;
+        }
+        .formulario input {
+          width: 100%;
+        }
+        .botonera {
+          width: 40%;
+          height: 25px;
+          line-height: 25px;
+          display: flex;
+          justify-content: space-around;
+          .boton {
+            font-size: 11px;
+            margin: 0px 5px 0px 5px;
+
+            .menu-dropdown {
+              background-color: white;
+              padding: 0px;
+              .submenu {
+                margin-top: 3px;
+                width: 100%;
+                .submenu a {
+                  padding: 10px;
+                }
+              }
+            }
+          }
+
+          .botonera .boton:hover .menu-dropdown {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .submenu {
+            font-size: 0.7rem;
+          }
+
+          .botonera .submenu:hover {
+            background-color: #98c488;
+            color: black;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .botonera .menu-dropdown {
+    left: 80%;
+  }
+
+  /* ···················································· */
+
+  /* ---------- @Media para contact (768px) ------------- */
+
+  /* ···················································· */
+  .contact-header {
+    text-align: center;
+    width: 100%;
+    font-size: 5vw;
+  }
+
+  .formulario2 {
+    display: flex;
+    justify-content: center;
+    .barras {
+      width: 90%;
+      margin: 10px auto;
+      .form-floating {
+        position: relative;
+        .icon {
+          position: absolute;
+          top: calc(30%);
+          left: 2rem;
+        }
+      }
+      #name,
+      #email,
+      #phone,
+      #textarea {
+        padding-left: 1.2rem;
+      }
+      .form-floating label,
+      .form-floating,
+      .form-control {
+        font-size: 2vw;
+        left: 1.5rem;
+        padding-left: 1.5rem;
+      }
+    }
+  }
+
+  .icon-textarea {
+    position: absolute;
+    top: 1.2rem;
+    left: 2rem;
+  }
+
+  .boton-submit {
+    margin-left: 6rem;
+    margin-bottom: 0px;
+  }
+
+  /* ·····················································*/
+
+  /* ------------------ footer (768px) ------------------ */
+
+  /* ···················································· */
+
+  footer {
+    .horario {
+      align-items: center;
+    }
+    .lugar {
+      align-items: center;
+    }
+
+    .location-zone, .work-hours, .contact-number {
+      margin: 5px;
+    }
+
+    .cont-footer {
+      height: auto;
+      width: 80%;
+      margin: 10px auto;
+      padding: 0px;
+      display: flex;
+      justify-content: space-evenly;
+      .info {
+        width: 30%;
+        height: 60px;
+        margin: 5px auto;
+      }
+    }
+
+    .info p {
+      justify-content: center;
+      margin: 0;
+      font-size: 12px;
+      text-align: center;
+      word-wrap: normal;
+    }
+
+    .work-hours,
+    .location-zone,
+    .contact-number {
+      width: 10%;
+    }
+
+    .redes {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 90px;
+      margin-bottom: 0px;
+      padding: 0px;
+      .foto {
+        width: 25%;
+        height: 60px;
+        top: 30px;
+        justify-content: center;
+        align-items: center;
+        .foto-wrap {
+          height: 100%;
+          width: 100%;
+          align-self: center;
+        }
+      }
+      .semi-circulo {
+        background: #598464 0% 0% no-repeat padding-box;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        bottom: 0;
+        width: 100%;
+        height: 120px;
+        border-radius: 50% 50% 0 0;
+        display: flex;
+        justify-content: center;
+        .social-media {
+          width: auto;
+          height: 20px;
+          background: transparent;
+          margin: 10px;
+          position: relative;
+          top: 80px;
+        }
+      }
+    }
+  }
+}
+/* ···················································· */
+/* ------------ @media para menos de 480 px ----------- */
+/* ···················································· */
+@media screen and (max-width: 480px) {
+  .contact-header {
+    text-align: center;
+    width: 100%;
+    font-size: 5vw;
+  }
+  .formulario2 .barras #name,
+  .formulario2 .barras #email,
+  .formulario2 .barras #phone,
+  .formulario2 .barras #textarea {
+    font-size: 18px;
+  }
+
+  .formulario2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    form {
+      font-size: 18px;
+    }
+    .barras {
+      width: 90%;
+      margin: 10px auto;
+      .form-floating {
+        position: relative;
+        .icon {
+          position: absolute;
+          top: calc(25%);
+          left: 2.4rem;
+        }
+      }
+      #name,
+      #email,
+      #phone,
+      #textarea {
+        padding-left: 1rem !important;
+      }
+      .form-floating label,
+      .form-floating,
+      .form-control {
+        font-size: 2vw;
+        left: 1.5rem;
+        padding-left: 1.5rem;
+      }
+    }
+  }
+
+  .icon-textarea {
+    position: absolute;
+    top: 1.2rem;
+    left: 2rem;
+  }
+
+  .boton-submit {
+    margin-left: 3rem;
+    margin-bottom: 0px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+  }
+
+  /* ···················································· */
+
+  /* ----------------- work-with-us.html ----------------- */
+
+  /* ···················································· */
+
+  form,
+  input {
+    text-transform: capitalize;
+    font-size: 0.7vw;
+  }
+
+  input {
+    margin-left: 10px;
+  }
+
+  .px-5 {
+    padding: 0px !important;
+  }
+
+  .mx-5 {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  .form-control {
+    font-size: 0.7vw;
+  }
+
+  .iti--allow-dropdown {
+    padding-left: 25px;
+  }
+
+  /* ···················································· */
+
+  /* ---------------- header.html (480px) --------------- */
+
+  /* ···················································· */
+
+  h2 {
+    font-size: $h2-media480;
+  }
+  p {
+    font-size: $p-media480;
+    margin: 10px auto;
+  }
+
+  header {
+    height: 70px;
+    width: 100%;
+    margin: 0;
+    .barra-nav {
+      .cont-nav {
+        height: 60px;
+        justify-content: space-between;
+
+        .navbar-brand {
+          width: 55px;
+          height: 80%;
+          margin-right: 0px;
+        }
+        .formulario {
+          height: auto;
+          margin-top: 0px;
+          padding: 0;
+          font-size: 16px;
+          width: 100px;
+          input .form-control {
+            width: 10%;
+            font-size: 16px;
+          }
+        }
+        ul,
+        li {
+          font-size: 16px;
+          margin: 5px;
+          padding: 0;
+          width: auto;
+        }
+      }
+    }
+    .boton {
+      width: auto;
+      background-color: transparent;
+      margin: 5px auto;
+      list-style: none;
+      line-height: 20px;
+      text-align: center;
+      justify-content: center;
+      height: 20px;
+      padding: 0px;
+      border: none;
+
+      .menu-dropdown {
+        background-color: white;
+        padding: 0px;
+
+        .submenu {
+          margin-top: 3px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .botonera {
+    width: 30%;
+    height: 20px;
+    color: #383833;
+    text-transform: capitalize;
+    list-style: none;
+    line-height: 20px;
+    align-items: center;
+  }
+
+  .boton {
+    width: auto;
+    background-color: transparent;
+    margin: 5px auto;
+    list-style: none;
+    line-height: 20px;
+    text-align: center;
+    justify-content: center;
+    height: 20px;
+    padding: 0px;
+    border: none;
+  }
+
+  .menu-dropdown {
+    background-color: white;
+    padding: 0px;
+  }
+
+  .submenu {
+    margin-top: 3px;
+    width: 100%;
+  }
+
+  .botonera .menu-dropdown {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    left: 52.5%;
+    justify-content: center;
+  }
+
+  .botonera .boton:hover .menu-dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .botonera .submenu {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .botonera .submenu:hover {
+    background-color: #98c488;
+    color: black;
+    font-weight: bold;
+  }
+  .submenu a {
+    padding: 10px;
+  }
+
+  /* ···················································· */
+
+  /* ----------------- index.html (480px ) -------------- */
+
+  /* ···················································· */
+
+  #primera-sect {
+    padding-top: 20px;
+    height: auto;
+    margin-bottom: 50px;
+
+    .primero {
+      height: auto;
+
+      .contenedor {
+        display: flex;
+
+        .cont-hijo1 {
+          width: 50%;
+          height: auto;
+
+          .parr {
+            padding: 10px;
+          }
+
+          .cont-menu {
+            width: 80%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+
+            .menu-btn {
+              width: 80%;
+              height: 100%;
+              padding: 0;
+              margin: 0 0 20px 0;
+
+              .check-menu {
+                width: 80px;
+                height: 30px;
+                margin: 20px 20px 20px 10px;
+                padding: 0px;
+                text-align: center;
+                line-height: 30px;
+                font-size: $p-media480;
+              }
+            }
+          }
+          .img2 {
+            height: 70%;
+            width: 70%;
+            margin-left: 20px;
+          }
+        }
+        .cont-hijo {
+          width: 100px;
+          height: 80px;
+          .img-fluid {
+            width: 70%;
+            height: 80%;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  #segunda-sect {
+    height: 500px;
+    .titulo-grilla {
+      margin-bottom: 50px;
+    }
+    .galeria {
+      width: 90%;
+      height: 400px;
+      margin: 10px auto;
+      .uno,
+      .tres {
+        height: 50px;
+        margin: 0;
+      }
+      .dos {
+        height: 50px;
+      }
+      .cuatro,
+      .cinco {
+        height: 50px;
+        margin: 0;
+      }
+      .imguno,
+      .imgtres {
+        width: 20vw;
+      }
+      .imgdos {
+        width: 100%;
+      }
+      .imgcuatro,
+      .imgcinco {
+        width: 100%;
+      }
+
+      .sub-cont {
+        height: 100px;
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+        gap: 5px;
+        grid-template-areas:
+          "uno dos dos tres"
+          "uno dos dos tres"
+          "uno dos dos tres"
+          "cuatro cuatro cinco cinco"
+          "cuatro cuatro cinco cinco";
+      }
+    }
+  }
+
+  /* ···················································· */
+
+  /* ----------------- menu.html (480px)----------------- */
+
+  /* ···················································· */
+
+  .fondo {
+    background: $color-principal;
+    height: auto;
+    width: 100%;
+    #menu-disp {
+      width: 100%;
+      height: auto;
+      .food {
+        width: 100%;
+        height: auto;
+        .row {
+          .col {
+            .comida {
+              width: 40%;
+              height: 90%;
+              margin-top: 30px;
+              backface-visibility: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .comida:hover {
+    opacity: 0.5;
+    transition: 0.5s ease;
+  }
+
+  /* ···················································· */
+  /* --------------- about-us.html (480px) -------------- */
+  /* ···················································· */
+
+  #sec-about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .img-wrapper > img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    text-align: justify;
+    padding: 0;
+  }
+
+  .img-wrapper > .intro-parrafo {
+    position: absolute;
+    inset: 0;
+    font-size: 5px;
+    padding: 5px;
+    line-height: 10px;
+    text-align: justify;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+  }
+  .img-wrapper:hover > img.blur {
+    filter: blur(3px);
+  }
+
+  /* ···················································· */
+
+  /* ---------------------- footer ----------------------- */
+
+  /* ···················································· */
+
+  footer {
+    margin: 15px auto;
+    margin-bottom: 0px;
+    padding: 0px;
+    height: auto;
+    width: 100%;
+
+    .cont-footer {
+      height: auto;
+      width: 90%;
+      margin: 10px auto;
+      padding: 0px;
+      display: flex;
+      justify-content: space-evenly;
+      .info {
+        width: 30%;
+        height: 60px;
+        margin: 10px auto;
+      }
+    }
+
+    .info p {
+      justify-content: center;
+      font-size: 12px;
+      text-align: center;
+      word-wrap: break-word;
+    }
+
+    .work-hours,
+    .location-zone,
+    .contact-number {
+      width: 10%;
+    }
+
+    .redes {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 90px;
+      margin-bottom: 0px;
+      padding: 0px;
+      .foto {
+        width: 25%;
+        height: 60px;
+        top: 30px;
+        justify-content: center;
+        align-items: center;
+        .foto-wrap {
+          height: 100%;
+          width: 100%;
+          align-self: center;
+        }
+      }
+      .semi-circulo {
+        background: #598464 0% 0% no-repeat padding-box;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        bottom: 0;
+        width: 100%;
+        height: 120px;
+        border-radius: 50% 50% 0 0;
+        display: flex;
+        justify-content: center;
+        .social-media {
+          width: auto;
+          height: 20px;
+          background: transparent;
+          margin: 10px;
+          position: relative;
+          top: 80px;
+        }
+      }
+    }
+  }
+}

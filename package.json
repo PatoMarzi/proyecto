@@ -1,0 +1,21 @@
+{
+  "name": "wrapped-green",
+  "version": "1.0.0",
+  "description": "\"First Project\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "flag-icons": "^6.6.6"
+  }
+}
