@@ -375,9 +375,10 @@ footer {
   width: 100%;
   height: auto; }
   #menu-disp .food {
-    width: 100%;
+    width: 90%;
     height: auto;
-    margin-bottom: 25rem; }
+    margin: 10px auto;
+    margin-bottom: 15rem; }
   #menu-disp .grilla-cont {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -940,7 +941,9 @@ input {
     #segunda-sect .galeria {
       width: 90%;
       height: 400px;
-      margin: 10px auto; }
+      margin: 10px auto;
+      display: flex;
+      flex-direction: column; }
       #segunda-sect .galeria .uno,
       #segunda-sect .galeria .tres {
         height: 50px;
@@ -961,9 +964,9 @@ input {
         width: 100%; }
       #segunda-sect .galeria .sub-cont {
         height: 100px;
-        width: 100%;
-        margin: 0px 0px 20px 0px;
-        gap: 5px;
+        width: 80%;
+        margin: 10px auto;
+        gap: auto;
         grid-template-areas: "uno dos dos tres" "uno dos dos tres" "uno dos dos tres" "cuatro cuatro cinco cinco" "cuatro cuatro cinco cinco"; }
   /* ···················································· */
   /* ----------------- menu.html (480px)----------------- */

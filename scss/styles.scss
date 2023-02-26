@@ -444,9 +444,10 @@ footer {
   height: auto;
 
   .food {
-    width: 100%;
+    width: 90%;
     height: auto;
-    margin-bottom: 25rem;
+    margin: 10px auto;
+    margin-bottom: 15rem;
   }
 
   .grilla-cont {
@@ -689,8 +690,6 @@ input {
   padding-left: 5px !important;
   font-size: 1vw;
 }
-
- 
 
 .iti--allow-dropdown {
   width: 90% !important;
@@ -1227,6 +1226,8 @@ input {
       width: 90%;
       height: 400px;
       margin: 10px auto;
+      display: flex;
+      flex-direction: column;
       .uno,
       .tres {
         height: 50px;
@@ -1254,15 +1255,15 @@ input {
 
       .sub-cont {
         height: 100px;
-        width: 100%;
-        margin: 0px 0px 20px 0px;
-        gap: 5px;
+        width: 80%;
+        margin: 10px auto;
+        gap: auto;
         grid-template-areas:
           "uno dos dos tres"
           "uno dos dos tres"
           "uno dos dos tres"
           "cuatro cuatro cinco cinco"
-          "cuatro cuatro cinco cinco";
+          "cuatro cuatro cinco cinco"; 
       }
     }
   }
@@ -1369,7 +1370,7 @@ input {
       .info {
         width: 30%;
         height: 60px;
-        margin: 10px auto;  
+        margin: 10px auto;
       }
     }
 
