@@ -657,7 +657,9 @@ input {
     align-items: center; }
   footer .lugar {
     align-items: center; }
-  footer .location-zone, footer .work-hours, footer .contact-number {
+  footer .location-zone,
+  footer .work-hours,
+  footer .contact-number {
     margin: 5px; }
   footer .cont-footer {
     height: auto;
@@ -1042,7 +1044,9 @@ input {
       justify-content: center;
       font-size: 12px;
       text-align: center;
-      word-wrap: break-word; }
+      word-wrap: normal;
+      display: flex;
+      flex-direction: column; }
     footer .work-hours,
     footer .location-zone,
     footer .contact-number {

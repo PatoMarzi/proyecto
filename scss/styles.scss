@@ -690,6 +690,8 @@ input {
   font-size: 1vw;
 }
 
+ 
+
 .iti--allow-dropdown {
   width: 90% !important;
   font-size: 1vw;
@@ -835,7 +837,9 @@ input {
       align-items: center;
     }
 
-    .location-zone, .work-hours, .contact-number {
+    .location-zone,
+    .work-hours,
+    .contact-number {
       margin: 5px;
     }
 
@@ -1365,7 +1369,7 @@ input {
       .info {
         width: 30%;
         height: 60px;
-        margin: 10px auto;
+        margin: 10px auto;  
       }
     }
 
@@ -1373,7 +1377,9 @@ input {
       justify-content: center;
       font-size: 12px;
       text-align: center;
-      word-wrap: break-word;
+      word-wrap: normal;
+      display: flex;
+      flex-direction: column;
     }
 
     .work-hours,
